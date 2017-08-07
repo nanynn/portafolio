@@ -1,0 +1,150 @@
+body{
+	font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4{
+	font-weigth: 700;
+}
+
+#menu-ppal{
+	background-color: transparent;
+	box-shadow: none;
+	color: $white;
+	position: absolute;
+	top: 100%;
+	
+	.fixed{
+	position: fixed;
+	top: 0;
+	z-index: 5;
+	background-color:$cafe-arbol;
+	box-shadow:0 0 0.3em #000;
+	}
+
+	@media (max-width:668px){
+		#menu-ppal{
+			visibility:hidden;
+		}
+		.fixed{
+			display:none;
+		}
+	}
+
+	img{
+		padding-left: 5%;
+		width: 15%;
+	}
+}
+
+#about{
+	background-color: $cafe-claro;
+	padding: 5% 0;
+	h2,h4, p{
+		color: $cafe-oscuro;
+	}
+	
+	.about__box{
+
+	}
+	.about__img{
+		border: 15px solid $white;
+		box-shadow:0 0 0.3em $cafe-arbol;
+	}
+	.about__img--rec{
+		width: 40%;
+		margin: 0 auto;
+	}
+}
+
+#skills{
+	background: url('../img/bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+
+	.skills__box{
+		padding: 5% 0;
+	}
+
+	h2{
+		color: $white;
+	}
+	.skills__icon{
+		margin: 0 auto;
+		text-align:center;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		color: $white;
+		padding:0;
+		display: block;
+	}
+	h3{
+		color: $white;
+		border-radius: 0.1em;
+		text-align: center;
+	}
+	.skills--icon{
+		color: $white;
+		font-size: 48px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+}
+
+#portfolio{
+	background-color: $cafe-oscuro;
+	.portfolio__box{
+		padding: 5% 0;
+	}
+	h2{
+		color: $white;
+	}
+	.container{
+		width: 90%;
+	}
+}
+
+#contacto{
+	background: $cafe-claro;
+	.contacto__box{
+		padding: 2% 0;
+	}
+	h2{
+		color: $cafe-oscuro;
+	}
+	.contacto__link{
+		margin: 0 auto;
+		text-decoration:none;
+		color: $cafe-oscuro;
+		text-align: center;
+		&:hover{
+			color: $verde-oliva;
+		}
+	}
+}
+
+footer{
+	background-color: $verde-oliva;
+	.row{
+		margin:0;
+	}
+	.footer__box{
+		text-align:center;
+		color: $white;
+	}
+	.fa-heart{
+		color: $cafe-arbol;
+	}
+	a{
+		text-decoration: none;
+		color: $cafe-claro;
+		&:hover{
+			color: $cafe-oscuro;
+		}
+	}
+}
+
+
