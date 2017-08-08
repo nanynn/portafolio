@@ -6,6 +6,10 @@ h1, h2, h3, h4{
 	font-weigth: 700;
 }
 
+#sidenav-overlay{
+	z-index: 0;
+}
+
 #menu-ppal{
 	background-color: transparent;
 	box-shadow: none;
@@ -21,18 +25,16 @@ h1, h2, h3, h4{
 	box-shadow:0 0 0.3em #000;
 	}
 
-	@media (max-width:668px){
-		#menu-ppal{
-			visibility:hidden;
-		}
-		.fixed{
-			display:none;
-		}
-	}
-
-	img{
+	.nav__img{
 		padding-left: 5%;
 		width: 15%;
+	}
+
+
+	@media only screen and (max-width:1024px){
+		nav.nav-wrapper {
+		    display:none;
+		}
 	}
 }
 
@@ -49,11 +51,19 @@ h1, h2, h3, h4{
 	.about__img{
 		border: 15px solid $white;
 		box-shadow:0 0 0.3em $cafe-arbol;
+
+		@media only screen and (max-width: 1024px){
+			img.responsive-img, video.responsive-video{
+				width: 60%;
+			}
+		}
 	}
+
 	.about__img--rec{
 		width: 40%;
 		margin: 0 auto;
 	}
+
 }
 
 #skills{
@@ -98,6 +108,8 @@ h1, h2, h3, h4{
 	background-color: $cafe-oscuro;
 	.portfolio__box{
 		padding: 5% 0;
+		margin: 0 auto;
+		width: 100%;
 	}
 	h2{
 		color: $white;
@@ -105,12 +117,27 @@ h1, h2, h3, h4{
 	.container{
 		width: 90%;
 	}
+
+	@media (min-width:1px) and (max-width: 668px){
+		.grid{
+			display: inline-block;
+		}
+	}
+
+	@media (min-width:669px) and (max-width: 1024px){
+		.grid{
+			display: inline-block;
+			width:30%;
+			margin: auto;
+		}
+	}
 }
 
 #contacto{
 	background: $cafe-claro;
 	.contacto__box{
 		padding: 2% 0;
+		margin: 0 auto;
 	}
 	h2{
 		color: $cafe-oscuro;

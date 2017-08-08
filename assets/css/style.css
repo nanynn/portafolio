@@ -9,6 +9,10 @@ header {
   height: 100vh;
   position: relative; }
 
+@media (max-width: 668px) {
+  header {
+    height: 60vh;
+    position: relative; } }
 header #menu-ppal {
   position: absolute;
   top: 100%; }
@@ -1244,6 +1248,9 @@ body {
 h1, h2, h3, h4 {
   font-weigth: 700; }
 
+#sidenav-overlay {
+  z-index: 0; }
+
 #menu-ppal {
   background-color: transparent;
   box-shadow: none;
@@ -1256,14 +1263,12 @@ h1, h2, h3, h4 {
     z-index: 5;
     background-color: #564334;
     box-shadow: 0 0 0.3em #000; }
-  @media (max-width: 668px) {
-    #menu-ppal #menu-ppal {
-      visibility: hidden; }
-    #menu-ppal .fixed {
-      display: none; } }
-  #menu-ppal img {
+  #menu-ppal .nav__img {
     padding-left: 5%;
     width: 15%; }
+  @media only screen and (max-width: 1024px) {
+    #menu-ppal nav.nav-wrapper {
+      display: none; } }
 
 #about {
   background-color: #cfb590;
@@ -1273,6 +1278,9 @@ h1, h2, h3, h4 {
   #about .about__img {
     border: 15px solid #fff;
     box-shadow: 0 0 0.3em #564334; }
+    @media only screen and (max-width: 1024px) {
+      #about .about__img img.responsive-img, #about .about__img video.responsive-video {
+        width: 60%; } }
   #about .about__img--rec {
     width: 40%;
     margin: 0 auto; }
@@ -1309,16 +1317,27 @@ h1, h2, h3, h4 {
 #portfolio {
   background-color: #49281f; }
   #portfolio .portfolio__box {
-    padding: 5% 0; }
+    padding: 5% 0;
+    margin: 0 auto;
+    width: 100%; }
   #portfolio h2 {
     color: #fff; }
   #portfolio .container {
     width: 90%; }
+  @media (min-width: 1px) and (max-width: 668px) {
+    #portfolio .grid {
+      display: inline-block; } }
+  @media (min-width: 669px) and (max-width: 1024px) {
+    #portfolio .grid {
+      display: inline-block;
+      width: 30%;
+      margin: auto; } }
 
 #contacto {
   background: #cfb590; }
   #contacto .contacto__box {
-    padding: 2% 0; }
+    padding: 2% 0;
+    margin: 0 auto; }
   #contacto h2 {
     color: #49281f; }
   #contacto .contacto__link {
