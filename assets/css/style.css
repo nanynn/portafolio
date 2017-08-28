@@ -164,8 +164,8 @@ figure.effect-sadie:hover p {
 /***** Jazz *****/
 /*---------------*/
 figure.effect-jazz {
-  background: -webkit-linear-gradient(-35deg, #9e9a41 0%, #758918 100%);
-  background: linear-gradient(-45deg, #f3cf3f 0%, #758918 100%); }
+  background: -webkit-linear-gradient(-35deg, #758918 0%, #49281f 100%);
+  background: linear-gradient(-45deg, #21120e 0%, #cfb590 100%); }
 
 figure.effect-jazz img {
   opacity: 0.9; }
@@ -1267,11 +1267,16 @@ h1, h2, h3, h4 {
     padding-left: 5%;
     width: 15%; }
 
+.fa-angle-double-down {
+  padding-top: 65%; }
+
 #about {
   background-color: #cfb590;
   padding: 5% 0; }
-  #about h2, #about h4, #about p {
+  #about h3, #about h4, #about p {
     color: #49281f; }
+  #about .box_img {
+    padding-top: 5%; }
   #about .about__img {
     border: 15px solid #fff;
     box-shadow: 0 0 0.3em #564334; }
@@ -1290,7 +1295,7 @@ h1, h2, h3, h4 {
   background-attachment: fixed; }
   #skills .skills__box {
     padding: 5% 0; }
-  #skills h2 {
+  #skills h3 {
     color: #fff; }
   #skills .skills__icon {
     margin: 0 auto;
@@ -1301,7 +1306,7 @@ h1, h2, h3, h4 {
     color: #fff;
     padding: 0;
     display: block; }
-  #skills h3 {
+  #skills h4 {
     color: #fff;
     border-radius: 0.1em;
     text-align: center; }
@@ -1317,7 +1322,7 @@ h1, h2, h3, h4 {
     padding: 5% 0;
     margin: 0 auto;
     width: 100%; }
-  #portfolio h2 {
+  #portfolio h3 {
     color: #fff; }
   #portfolio .container {
     width: 90%; }
@@ -1337,8 +1342,10 @@ h1, h2, h3, h4 {
   #contacto .contacto__box {
     padding: 2% 0;
     margin: 0 auto; }
-  #contacto h2 {
+  #contacto h3 {
     color: #49281f; }
+  #contacto .fa {
+    font-size: 50px; }
   #contacto .contacto__link {
     margin: 0 auto;
     text-decoration: none;
